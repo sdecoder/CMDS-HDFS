@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+<property>
+   <name>dfs.namenode.secondary.http-address</name>
+   <value>0.0.0.0:90090</value>
+ </property>
+
+ <property>
+   <name>dfs.datanode.address</name>
+   <value>0.0.0.0:90010</value>
+ </property>
+
+ <property>
+   <name>dfs.datanode.http.address</name>
+   <value>0.0.0.0:90075</value>
+ </property>
+
+ <property>
+   <name>dfs.datanode.ipc.address</name>
+   <value>0.0.0.0:90020</value>
+ </property>
+
+ <property>
+   <name>dfs.namenode.http-address</name>
+   <value>0.0.0.0:90070</value>
+ </property>
+
+<property>
+   <name>dfs.poolnode.address</name>
+   <value>0.0.0.0:90010</value>
+ </property>
+
+<property>
+   <name>dfs.poolnode.ipc.address</name>
+   <value>0.0.0.0:90020</value>
+ </property>
+</configuration>

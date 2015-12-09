@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+ <property>
+   <name>dfs.namenode.secondary.http-address</name>
+   <value>0.0.0.0.:19900</value> 
+ </property>
+
+
+ <property>
+   <name>ipc.client.connect.max.retries</name>
+   <value>50</value> 
+ </property>
+
+ <property>
+   <name>dfs.datanode.address</name>
+   <value>0.0.0.0:19901</value> 
+ </property>
+
+ <property>
+   <name>dfs.datanode.http.address</name>
+   <value>0.0.0.0:19902</value> 
+ </property>
+
+ <property>
+   <name>dfs.datanode.ipc.address</name>
+   <value>0.0.0.0:19903</value> 
+ </property>
+
+ <property>
+   <name>dfs.namenode.http-address</name>
+   <value>0.0.0.0:19904</value> 
+ </property>
+ 
+<property>
+   <name>dfs.poolnode.address</name>
+   <value>0.0.0.0:19905</value> 
+ </property>
+ 
+<property>
+   <name>dfs.poolnode.ipc.address</name>
+   <value>0.0.0.0:19906</value> 
+ </property>
+
+
+
+<property>
+<name>dfs.name.dir</name>
+<value>/root/dfs/name</value>
+</property>
+
+<property>
+<name>dfs.data.dir</name>
+<value>/root/dfs/data</value>
+</property>
+
+<property>
+<name>fs.checkpoint.dir</name>
+<value>/root/dfs/name.backup</value>
+</property>
+
+
+</configuration>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+<property>
+ <name>mapred.job.tracker</name>
+ <value>sv1:19977</value>
+</property>
+
+
+<property>
+<name>mapreduce.jobtracker.http.address</name>
+<value>0.0.0.0:57737</value>
+</property>
+
+<property>
+<name>mapreduce.tasktracker.http.address</name>
+<value>0.0.0.0:57767</value>
+</property>
+
+</configuration>

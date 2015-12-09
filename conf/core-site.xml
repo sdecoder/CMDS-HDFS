@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+ <property>
+  <name>fs.default.name</name>
+  <value>hdfs://sv1.dc.tencent:10086/</value>
+ </property>
+ <property>
+  <name>dfs.dnn.list</name>
+  <value>hdfs://sv1.dc.tencent:10086/,hdfs://sv4.dc.tencent:10086/,hdfs://sv15.dc.tencent:10086/</value>
+ </property>
+ <property>
+  <name>dfs.dnn.namespace.seed</name>
+  <value>13743789023</value>
+ </property>
+
+<property>
+<name>protocol.buffer.socket.rpc.port</name>
+<value>19999</value>
+</property>
+
+</configuration>
