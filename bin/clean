@@ -1,0 +1,11 @@
+echo > /home/test/hadoop-0.21.0/bin/../logs/hadoop-test-namenode-se2.log
+./stop-dfs.sh 
+echo "Format HDFS on localhost..."
+hadoop namenode -format
+expect "Re-format filesystem in /tmp/hadoop-test/dfs/name ? (Y or N)"
+send "Y"
+echo "Format HDFS on remote host: netmonitor"
+ssh test@netmonitor "hadoop namenode -format"
+expect "Re-format filesystem in /tmp/hadoop-test/dfs/name ? (Y or N)"
+send "Y"
+ssh test@netmonitor "echo > /home/test/hadoop-0.21.0/bin/../logs/hadoop-test-namenode-NetMonitor.log"

@@ -1,0 +1,309 @@
+Buildfile: /home/tacitus/hadoop-0.21.0/hdfs/build.xml
+
+clover.setup:
+
+clover.info:
+     [echo] 
+     [echo]      Clover not found. Code coverage reports disabled.
+     [echo]   
+
+clover:
+
+ivy-download:
+
+ivy-init-dirs:
+
+ivy-probe-antlib:
+
+ivy-init-antlib:
+
+ivy-init:
+[ivy:configure] :: Ivy 2.1.0 - 20090925235825 :: http://ant.apache.org/ivy/ ::
+[ivy:configure] :: loading settings :: file = /home/tacitus/hadoop-0.21.0/hdfs/ivy/ivysettings.xml
+
+ivy-resolve-common:
+
+ivy-retrieve-common:
+[ivy:cachepath] DEPRECATED: 'ivy.conf.file' is deprecated, use 'ivy.settings.file' instead
+[ivy:cachepath] :: loading settings :: file = /home/tacitus/hadoop-0.21.0/hdfs/ivy/ivysettings.xml
+
+init:
+    [touch] Creating /tmp/null1908958794
+   [delete] Deleting: /tmp/null1908958794
+
+compile-hdfs-classes:
+    [javac] /home/tacitus/hadoop-0.21.0/hdfs/build.xml:313: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Warning: org/apache/hadoop/hdfs/DFSClient.java modified in the future.
+    [javac] Warning: org/apache/hadoop/hdfs/protocol/ClientProtocol.java modified in the future.
+    [javac] Warning: org/apache/hadoop/hdfs/server/namenode/NameNode.java modified in the future.
+    [javac] Compiling 7 source files to /home/tacitus/hadoop-0.21.0/hdfs/build/classes
+    [javac] /home/tacitus/hadoop-0.21.0/hdfs/src/java/org/apache/hadoop/hdfs/DFSClient.java:108: 警告：sun.util.logging.resources.logging 是 Sun 的专用 API，可能会在未来版本中删除
+    [javac] import sun.util.logging.resources.logging;
+    [javac]                                  ^
+    [javac] 注意：/home/tacitus/hadoop-0.21.0/hdfs/src/java/org/apache/hadoop/hdfs/server/namenode/NameNode.java 使用或覆盖了已过时的 API。
+    [javac] 注意：要了解详细信息，请使用 -Xlint:deprecation 重新编译。
+    [javac] 1 警告
+[paranamer] Generating parameter names from /home/tacitus/hadoop-0.21.0/hdfs/src/java/org/apache/hadoop/hdfs/protocol to /home/tacitus/hadoop-0.21.0/hdfs/build/classes
+[paranamer] Generating parameter names from /home/tacitus/hadoop-0.21.0/hdfs/src/java/org/apache/hadoop/hdfs/server/protocol to /home/tacitus/hadoop-0.21.0/hdfs/build/classes
+
+compile-core:
+
+check-c++-libhdfs:
+
+check-c++-makefile-libhdfs:
+
+create-c++-libhdfs-makefile:
+
+compile-c++-libhdfs:
+
+compile-contrib:
+
+compile:
+
+check-libhdfs-fuse:
+
+check-libhdfs-exists:
+
+compile:
+Trying to override old definition of task macro_tar
+
+check-contrib:
+
+init:
+     [echo] contrib: hdfsproxy
+
+init-contrib:
+
+ivy-download:
+
+ivy-probe-antlib:
+
+ivy-init-antlib:
+
+ivy-init:
+
+ivy-resolve-common:
+[ivy:resolve] :: loading settings :: file = /home/tacitus/hadoop-0.21.0/hdfs/ivy/ivysettings.xml
+[ivy:resolve] :: resolving dependencies :: org.apache.hadoop#hdfsproxy;working@se2
+[ivy:resolve] 	confs: [common]
+[ivy:resolve] 	found org.apache.hadoop#hadoop-common;0.21.0-SNAPSHOT in apache-snapshot
+[ivy:resolve] 	found commons-cli#commons-cli;1.2 in maven2
+[ivy:resolve] 	found xmlenc#xmlenc;0.52 in maven2
+[ivy:resolve] 	found commons-httpclient#commons-httpclient;3.1 in maven2
+[ivy:resolve] 	found commons-codec#commons-codec;1.4 in maven2
+[ivy:resolve] 	found commons-net#commons-net;1.4.1 in maven2
+[ivy:resolve] 	found oro#oro;2.0.8 in maven2
+[ivy:resolve] 	found org.mortbay.jetty#jetty;6.1.14 in maven2
+[ivy:resolve] 	found org.mortbay.jetty#jetty-util;6.1.14 in maven2
+[ivy:resolve] 	found org.mortbay.jetty#servlet-api-2.5;6.1.14 in maven2
+[ivy:resolve] 	found tomcat#jasper-runtime;5.5.12 in maven2
+[ivy:resolve] 	found tomcat#jasper-compiler;5.5.12 in maven2
+[ivy:resolve] 	found org.mortbay.jetty#jsp-api-2.1;6.1.14 in maven2
+[ivy:resolve] 	found org.mortbay.jetty#jsp-2.1;6.1.14 in maven2
+[ivy:resolve] 	found org.eclipse.jdt#core;3.1.1 in maven2
+[ivy:resolve] 	found ant#ant;1.6.5 in maven2
+[ivy:resolve] 	found commons-el#commons-el;1.0 in maven2
+[ivy:resolve] 	found net.java.dev.jets3t#jets3t;0.7.1 in maven2
+[ivy:resolve] 	found commons-logging#commons-logging;1.1.1 in maven2
+[ivy:resolve] 	found net.sf.kosmosfs#kfs;0.3 in maven2
+[ivy:resolve] 	found junit#junit;4.8.1 in maven2
+[ivy:resolve] 	found hsqldb#hsqldb;1.8.0.10 in maven2
+[ivy:resolve] 	found org.apache.hadoop#avro;1.3.2 in maven2
+[ivy:resolve] 	found org.codehaus.jackson#jackson-mapper-asl;1.4.2 in maven2
+[ivy:resolve] 	found org.codehaus.jackson#jackson-core-asl;1.4.2 in maven2
+[ivy:resolve] 	found org.slf4j#slf4j-api;1.5.11 in maven2
+[ivy:resolve] 	found com.thoughtworks.paranamer#paranamer;2.2 in maven2
+[ivy:resolve] 	found com.thoughtworks.paranamer#paranamer-ant;2.2 in maven2
+[ivy:resolve] 	found com.thoughtworks.paranamer#paranamer-generator;2.2 in maven2
+[ivy:resolve] 	found com.thoughtworks.qdox#qdox;1.10.1 in maven2
+[ivy:resolve] 	found asm#asm;3.2 in maven2
+[ivy:resolve] 	found commons-lang#commons-lang;2.5 in maven2
+[ivy:resolve] 	found org.apache.hadoop#hadoop-common-test;0.21.0-SNAPSHOT in apache-snapshot
+[ivy:resolve] 	found org.apache.ftpserver#ftplet-api;1.0.0 in maven2
+[ivy:resolve] 	found org.apache.mina#mina-core;2.0.0-M5 in maven2
+[ivy:resolve] 	found org.apache.ftpserver#ftpserver-core;1.0.0 in maven2
+[ivy:resolve] 	found org.apache.ftpserver#ftpserver-deprecated;1.0.0-M2 in maven2
+[ivy:resolve] 	found log4j#log4j;1.2.15 in maven2
+[ivy:resolve] 	found commons-logging#commons-logging-api;1.1 in maven2
+[ivy:resolve] 	found org.slf4j#slf4j-log4j12;1.5.11 in maven2
+[ivy:resolve] 	found org.apache.cactus#cactus.core.framework.uberjar.javaEE.14;1.8.0 in maven2
+[ivy:resolve] 	found org.apache.cactus#cactus.integration.ant;1.8.0 in maven2
+[ivy:resolve] 	found org.apache.cactus#cactus.integration.shared.api;1.8.0 in maven2
+[ivy:resolve] 	found commons-io#commons-io;1.4 in maven2
+[ivy:resolve] 	found aspectj#aspectjrt;1.5.3 in maven2
+[ivy:resolve] 	found org.codehaus.cargo#cargo-core-uberjar;0.9 in maven2
+[ivy:resolve] 	found org.codehaus.cargo#cargo-ant;0.9 in maven2
+[ivy:resolve] 	found javax.servlet#jsp-api;2.0 in maven2
+[ivy:resolve] 	found javax.servlet#servlet-api;2.5 in maven2
+[ivy:resolve] 	found javax.servlet#jstl;1.1.2 in maven2
+[ivy:resolve] 	found taglibs#standard;1.1.2 in maven2
+[ivy:resolve] 	found junitperf#junitperf;1.8 in maven2
+[ivy:resolve] :: resolution report :: resolve 1197ms :: artifacts dl 42ms
+[ivy:resolve] 	:: evicted modules:
+[ivy:resolve] 	commons-logging#commons-logging;1.0.4 by [commons-logging#commons-logging;1.1.1] in [common]
+[ivy:resolve] 	commons-codec#commons-codec;1.2 by [commons-codec#commons-codec;1.4] in [common]
+[ivy:resolve] 	commons-logging#commons-logging;1.0.3 by [commons-logging#commons-logging;1.1.1] in [common]
+[ivy:resolve] 	commons-codec#commons-codec;1.3 by [commons-codec#commons-codec;1.4] in [common]
+[ivy:resolve] 	org.slf4j#slf4j-api;1.5.2 by [org.slf4j#slf4j-api;1.5.11] in [common]
+[ivy:resolve] 	org.apache.mina#mina-core;2.0.0-M4 by [org.apache.mina#mina-core;2.0.0-M5] in [common]
+[ivy:resolve] 	org.apache.ftpserver#ftplet-api;1.0.0-M2 by [org.apache.ftpserver#ftplet-api;1.0.0] in [common]
+[ivy:resolve] 	org.apache.ftpserver#ftpserver-core;1.0.0-M2 by [org.apache.ftpserver#ftpserver-core;1.0.0] in [common]
+[ivy:resolve] 	org.apache.mina#mina-core;2.0.0-M2 by [org.apache.mina#mina-core;2.0.0-M5] in [common]
+[ivy:resolve] 	commons-lang#commons-lang;2.3 by [commons-lang#commons-lang;2.5] in [common]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      common      |   62  |   0   |   0   |   10  ||   52  |   0   |
+	---------------------------------------------------------------------
+
+ivy-retrieve-common:
+[ivy:retrieve] :: retrieving :: org.apache.hadoop#hdfsproxy [sync]
+[ivy:retrieve] 	confs: [common]
+[ivy:retrieve] 	0 artifacts copied, 52 already retrieved (0kB/26ms)
+[ivy:cachepath] :: loading settings :: file = /home/tacitus/hadoop-0.21.0/hdfs/ivy/ivysettings.xml
+
+compile:
+     [echo] contrib: hdfsproxy
+    [javac] /home/tacitus/hadoop-0.21.0/hdfs/src/contrib/build-contrib.xml:139: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+check-contrib:
+
+init:
+     [echo] contrib: thriftfs
+
+init-contrib:
+
+ivy-download:
+
+ivy-probe-antlib:
+
+ivy-init-antlib:
+
+ivy-init:
+[ivy:configure] :: loading settings :: file = /home/tacitus/hadoop-0.21.0/hdfs/ivy/ivysettings.xml
+
+ivy-resolve-common:
+[ivy:resolve] :: resolving dependencies :: org.apache.hadoop#thriftfs;working@se2
+[ivy:resolve] 	confs: [common]
+[ivy:resolve] 	found org.apache.hadoop#hadoop-common;0.21.0-SNAPSHOT in apache-snapshot
+[ivy:resolve] 	found commons-cli#commons-cli;1.2 in maven2
+[ivy:resolve] 	found xmlenc#xmlenc;0.52 in maven2
+[ivy:resolve] 	found commons-httpclient#commons-httpclient;3.1 in maven2
+[ivy:resolve] 	found commons-codec#commons-codec;1.4 in maven2
+[ivy:resolve] 	found commons-net#commons-net;1.4.1 in maven2
+[ivy:resolve] 	found oro#oro;2.0.8 in maven2
+[ivy:resolve] 	found org.mortbay.jetty#jetty;6.1.14 in maven2
+[ivy:resolve] 	found org.mortbay.jetty#jetty-util;6.1.14 in maven2
+[ivy:resolve] 	found org.mortbay.jetty#servlet-api-2.5;6.1.14 in maven2
+[ivy:resolve] 	found tomcat#jasper-runtime;5.5.12 in maven2
+[ivy:resolve] 	found tomcat#jasper-compiler;5.5.12 in maven2
+[ivy:resolve] 	found org.mortbay.jetty#jsp-api-2.1;6.1.14 in maven2
+[ivy:resolve] 	found org.mortbay.jetty#jsp-2.1;6.1.14 in maven2
+[ivy:resolve] 	found org.eclipse.jdt#core;3.1.1 in maven2
+[ivy:resolve] 	found ant#ant;1.6.5 in maven2
+[ivy:resolve] 	found commons-el#commons-el;1.0 in maven2
+[ivy:resolve] 	found net.java.dev.jets3t#jets3t;0.7.1 in maven2
+[ivy:resolve] 	found commons-logging#commons-logging;1.1.1 in maven2
+[ivy:resolve] 	found net.sf.kosmosfs#kfs;0.3 in maven2
+[ivy:resolve] 	found junit#junit;4.8.1 in maven2
+[ivy:resolve] 	found hsqldb#hsqldb;1.8.0.10 in maven2
+[ivy:resolve] 	found org.apache.hadoop#avro;1.3.2 in maven2
+[ivy:resolve] 	found org.codehaus.jackson#jackson-mapper-asl;1.4.2 in maven2
+[ivy:resolve] 	found org.codehaus.jackson#jackson-core-asl;1.4.2 in maven2
+[ivy:resolve] 	found org.slf4j#slf4j-api;1.5.11 in maven2
+[ivy:resolve] 	found com.thoughtworks.paranamer#paranamer;2.2 in maven2
+[ivy:resolve] 	found com.thoughtworks.paranamer#paranamer-ant;2.2 in maven2
+[ivy:resolve] 	found com.thoughtworks.paranamer#paranamer-generator;2.2 in maven2
+[ivy:resolve] 	found com.thoughtworks.qdox#qdox;1.10.1 in maven2
+[ivy:resolve] 	found asm#asm;3.2 in maven2
+[ivy:resolve] 	found commons-lang#commons-lang;2.5 in maven2
+[ivy:resolve] 	found log4j#log4j;1.2.15 in maven2
+[ivy:resolve] :: resolution report :: resolve 577ms :: artifacts dl 27ms
+[ivy:resolve] 	:: evicted modules:
+[ivy:resolve] 	commons-logging#commons-logging;1.0.4 by [commons-logging#commons-logging;1.1.1] in [common]
+[ivy:resolve] 	commons-codec#commons-codec;1.2 by [commons-codec#commons-codec;1.4] in [common]
+[ivy:resolve] 	commons-logging#commons-logging;1.0.3 by [commons-logging#commons-logging;1.1.1] in [common]
+[ivy:resolve] 	commons-codec#commons-codec;1.3 by [commons-codec#commons-codec;1.4] in [common]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      common      |   37  |   0   |   0   |   4   ||   33  |   0   |
+	---------------------------------------------------------------------
+
+ivy-retrieve-common:
+[ivy:retrieve] :: retrieving :: org.apache.hadoop#thriftfs [sync]
+[ivy:retrieve] 	confs: [common]
+[ivy:retrieve] 	0 artifacts copied, 33 already retrieved (0kB/16ms)
+[ivy:cachepath] DEPRECATED: 'ivy.conf.file' is deprecated, use 'ivy.settings.file' instead
+[ivy:cachepath] :: loading settings :: file = /home/tacitus/hadoop-0.21.0/hdfs/ivy/ivysettings.xml
+
+compile:
+     [echo] contrib: thriftfs
+    [javac] /home/tacitus/hadoop-0.21.0/hdfs/src/contrib/build-contrib.xml:139: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile-ant-tasks:
+    [javac] /home/tacitus/hadoop-0.21.0/hdfs/build.xml:1282: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile:
+
+clover.setup:
+
+clover.info:
+     [echo] 
+     [echo]      Clover not found. Code coverage reports disabled.
+     [echo]   
+
+clover:
+
+ivy-download:
+
+ivy-init-dirs:
+
+ivy-probe-antlib:
+
+ivy-init-antlib:
+
+ivy-init:
+
+ivy-resolve-common:
+
+ivy-retrieve-common:
+
+init:
+    [touch] Creating /tmp/null1908958794
+   [delete] Deleting: /tmp/null1908958794
+
+compile-hdfs-classes:
+    [javac] /home/tacitus/hadoop-0.21.0/hdfs/build.xml:313: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Warning: org/apache/hadoop/hdfs/DFSClient.java modified in the future.
+    [javac] Warning: org/apache/hadoop/hdfs/protocol/ClientProtocol.java modified in the future.
+    [javac] Warning: org/apache/hadoop/hdfs/server/namenode/NameNode.java modified in the future.
+    [javac] Compiling 7 source files to /home/tacitus/hadoop-0.21.0/hdfs/build/classes
+    [javac] /home/tacitus/hadoop-0.21.0/hdfs/src/java/org/apache/hadoop/hdfs/DFSClient.java:108: 警告：sun.util.logging.resources.logging 是 Sun 的专用 API，可能会在未来版本中删除
+    [javac] import sun.util.logging.resources.logging;
+    [javac]                                  ^
+    [javac] 注意：/home/tacitus/hadoop-0.21.0/hdfs/src/java/org/apache/hadoop/hdfs/server/namenode/NameNode.java 使用或覆盖了已过时的 API。
+    [javac] 注意：要了解详细信息，请使用 -Xlint:deprecation 重新编译。
+    [javac] 1 警告
+[paranamer] Generating parameter names from /home/tacitus/hadoop-0.21.0/hdfs/src/java/org/apache/hadoop/hdfs/protocol to /home/tacitus/hadoop-0.21.0/hdfs/build/classes
+[paranamer] Generating parameter names from /home/tacitus/hadoop-0.21.0/hdfs/src/java/org/apache/hadoop/hdfs/server/protocol to /home/tacitus/hadoop-0.21.0/hdfs/build/classes
+
+compile-core:
+
+jar:
+      [jar] Building jar: /home/tacitus/hadoop-0.21.0/hdfs/build/hadoop-hdfs-0.21.1-SNAPSHOT.jar
+      [jar] Warning: org/apache/hadoop/hdfs/DFSClient.java modified in the future.
+      [jar] Warning: org/apache/hadoop/hdfs/protocol/ClientProtocol.java modified in the future.
+      [jar] Warning: org/apache/hadoop/hdfs/server/namenode/NameNode.java modified in the future.
+
+BUILD SUCCESSFUL
+Total time: 13 seconds
+tacitus@se2: stopping namenode
+se2: no datanode to stop
+se2: no secondarynamenode to stop
+tacitus@se2: starting namenode, logging to /home/tacitus/hadoop-0.21.0/bin/../logs/hadoop-tacitus-namenode-se2.out
+se2: starting datanode, logging to /home/tacitus/hadoop-0.21.0/bin/../logs/hadoop-tacitus-datanode-se2.out
+se2: starting secondarynamenode, logging to /home/tacitus/hadoop-0.21.0/bin/../logs/hadoop-tacitus-secondarynamenode-se2.out
+/home/tacitus/hadoop-0.21.0/bin

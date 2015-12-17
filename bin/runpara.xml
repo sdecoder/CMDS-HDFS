@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+ <property>
+   <name>mapreduce.randomwriter.minkey</name>
+   <value>5</value> 
+ </property>
+
+ <property>
+   <name>mapreduce.randomwriter.maxkey</name>
+   <value>10</value> 
+ </property>
+
+ <property>
+   <name>mapreduce.randomwriter.minvalue</name>
+   <value>10</value> 
+ </property>
+
+ <property>
+   <name>mapreduce.randomwriter.maxvalue</name>
+   <value>1000</value> 
+ </property>
+
+ <property>
+   <name>mapreduce.randomwriter.totalbytes</name>
+   <value>1000000</value> 
+ </property>
+</configuration>
